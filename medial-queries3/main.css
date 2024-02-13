@@ -4,40 +4,40 @@ body {
 /* feeling more comfortable with it, but still a lot of looking up things.  Went to the solution a few times for things like aside<div and when my boxes got all wonky */
 
 * {
-  border: 1px solid black ;
+  border: 1px solid blue ;
   box-sizing: border-box;
 }
 
 .container {
   display: flex;
-  min-height: 80vh;
+  min-height: 90vh;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
 main {
-  flex-grow: 6;
+  flex-grow: 8;
 }
 
 header {
   width: 100%;
-  height: 15em;
-  margin-bottom: 4em;
+  height: 20em;
+  margin-bottom: 2em;
 }
 
 .wrapper {
   width: 100%;
-  min-height: 70vh;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
 }
 
 aside {
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  flex-grow: 2;
+  flex-grow: 3;
 }
 
 aside > div {

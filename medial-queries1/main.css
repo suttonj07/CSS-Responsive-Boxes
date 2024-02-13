@@ -12,7 +12,7 @@ body {
   justify-content: space-evenly;
 }
 main {
-  flex-grow: 4;
+  flex-grow: 6;
 }
 
 header, footer{
@@ -30,6 +30,6 @@ header, footer{
     width: 100%;
   }
   main, footer, header {
-    margin: 1em;
+    margin: 3em;
   }
 }

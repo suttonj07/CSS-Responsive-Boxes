@@ -2,7 +2,7 @@ body {
   background: papayawhip;
 }
 * {
-  border: 1px solid grey;
+  border: 1px solid blue;
   box-sizing: border-box;
 }
 .container {
@@ -14,15 +14,15 @@ body {
 .second-line {
   display: flex;
   flex-direction: column;
-  flex-grow: 4;
-  justify-content: space-between;
+  flex-grow: 6;
+  justify-content: space-evenly;
   min-height: 80vh;
   flex-wrap: wrap;
   align-items: center;
 }
 header, footer, aside .second-line {
-  flex-grow: 2;
-  margin: 1em;
+  flex-grow: 3;
+  margin: 2em;
   max-height: 20vh;
   /* had to look up what vh is  */
 }
@@ -30,7 +30,7 @@ header, footer, aside .second-line {
 aside {
   display: flex;
   justify-content: space-evenly;
-  width: 80%;
+  width: 70%;
   min-height: 15vh;
 }
 aside > div {
@@ -41,7 +41,7 @@ min-width: 30vh
 /* Would like more explanation on the aside<div part  had to go to solution for this part*/
 main {
   width: 100%;
-  flex-grow: 3;
+  flex-grow: 5;
   margin: .5em;
 }
 
