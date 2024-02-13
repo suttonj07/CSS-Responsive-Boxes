@@ -4,15 +4,19 @@ body {
 /* feeling more comfortable with it, but still a lot of looking up things.  Went to the solution a few times for things like aside<div and when my boxes got all wonky */
 
 * {
-  border: 1px solid grey;
+  border: 1px solid black ;
   box-sizing: border-box;
 }
 
 .container {
   display: flex;
   min-height: 80vh;
-  justify-content: stretch;
+  justify-content: space-evenly;
   flex-wrap: wrap;
+}
+
+main {
+  flex-grow: 6;
 }
 
 header {
@@ -32,19 +36,17 @@ aside {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-grow: 2;
 }
 
 aside > div {
-  width: 22%;
-  background: blue;
+  width: 20%;
+  background:green;
   margin: 3vw;
 }
 
-main {
-  flex-grow: 5;
-}
+
 
 @media (min-width: 600px) {
   .wrapper {

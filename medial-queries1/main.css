@@ -9,15 +9,17 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
+main {
+  flex-grow: 4;
+}
+
 header, footer{
   flex-grow: 2;
 }
 /* This concept confused me for a bit. Had to read a good bit */
-main {
-  flex-grow: 4;
-}
+
 @media (min-width: 600px) {
   .container {
     flex-direction: row;

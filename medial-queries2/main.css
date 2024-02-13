@@ -8,7 +8,7 @@ body {
 .container {
   display:flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   min-height: 90vh;
 }
 .second-line {
@@ -29,7 +29,7 @@ header, footer, aside .second-line {
 
 aside {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 80%;
   min-height: 15vh;
 }
@@ -38,7 +38,7 @@ aside > div {
   margin: .5em;
 min-width: 30vh
 }
-/* Would like more explanation on the aside<div part */
+/* Would like more explanation on the aside<div part  had to go to solution for this part*/
 main {
   width: 100%;
   flex-grow: 3;
