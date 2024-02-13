@@ -1,3 +1,33 @@
 body {
   background: blanchedalmond;
 }
+*{
+  border: 2px solid gray;
+}
+/* ALOT OF LOOKING UP WHAT VH IS AND CERTAIN FLEX COMMANDS */
+.container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+header, footer{
+  flex-grow: 2;
+}
+/* This concept confused me for a bit. Had to read a good bit */
+main {
+  flex-grow: 4;
+}
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  /* Would like to learn more on this */
+  header {
+    width: 100%;
+  }
+  main, footer, header {
+    margin: 1em;
+  }
+}

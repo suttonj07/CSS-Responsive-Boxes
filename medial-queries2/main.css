@@ -1,3 +1,69 @@
 body {
   background: papayawhip;
 }
+* {
+  border: 1px solid grey;
+  box-sizing: border-box;
+}
+.container {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 90vh;
+}
+.second-line {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 4;
+  justify-content: space-between;
+  min-height: 80vh;
+  flex-wrap: wrap;
+  align-items: center;
+}
+header, footer, aside .second-line {
+  flex-grow: 2;
+  margin: 1em;
+  max-height: 20vh;
+  /* had to look up what vh is  */
+}
+
+aside {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  min-height: 15vh;
+}
+aside > div {
+  flex-grow: 10;
+  margin: .5em;
+min-width: 30vh
+}
+/* Would like more explanation on the aside<div part */
+main {
+  width: 100%;
+  flex-grow: 3;
+  margin: .5em;
+}
+
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  header {
+    width: 100%;
+    max-height: 15vh;
+  }
+  .wrapper {
+    justify-content: stretch;
+    flex-basis: 70%;
+      min-height:  90vh;
+  }
+  /* had to use the solution for the wrapper/was unsure what flex basis did */
+  footer {
+    margin: 1em;
+    flex-grow: 2em;
+    min-height:  80vh;
+  }
+}
